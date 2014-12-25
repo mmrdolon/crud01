@@ -67,7 +67,7 @@
 <table  border="1", style="width:50%">
 <tr>
     <td>Personal Information</td>
-    <td><a href="#"></a></td>
+    <td><a href"#">Edit</a></td>
 
 </tr>
 
@@ -78,48 +78,47 @@
 
 </tr>
 <tr>
-    <td>S.S.C Roll</td>
+    <td>Mother's Name</td>
     <td></td>
 
 </tr>
 <tr>
-    <td>S.S.C Roll</td>
+    <td>Religion</td>
     <td></td>
 
 </tr>
 <tr>
-    <td>S.S.C Board</td>
+    <td>Date Of Birth</td>
     <td></td>
 
 </tr>
 
 
 
+<tr>
+    <td>Gender</td>
+    <td></td>
+
+</tr>
 <tr>
     <td>H.S.C Roll</td>
     <td></td>
 
 </tr>
 <tr>
-    <td>H.S.C Roll</td>
+    <td>Nationality</td>
     <td></td>
 
 </tr>
 <tr>
-    <td>H.S.C Board</td>
+    <td>National ID.</td>
     <td></td>
 
 </tr>
-<tr>
-    <td>Has Laptop</td>
-    <td></td>
 
-</tr>
-<tr>
-    <td>Preferred Exam Center</td>
-    <td></td>
 
-</tr>
+<h1> Contact Information </h1>
+
 
 </table>
 </body>
