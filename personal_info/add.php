@@ -1,31 +1,32 @@
 <?php
 
-$firstName = $_POST['track'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$lastName  = $_POST['lastName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
-$firstName = $_POST['firstName'];
+$Track = $_POST['track'];
+$SSCroll = $_POST['ssc_roll'];
+$HSCroll = $_POST['hsc_roll'];
+$Laptop = $_POST['laptop'];
+$Name = $_POST['a_name'];
+$Father_name = $_POST['father_name'];
+$Mother_name = $_POST['mother_name'];
+$Religion = $_POST['religion'];
+$Value = $_POST['value'];
+$Sex = $_POST['sex'];
+$Nationality  = $_POST['nationality'];
+$Address = $_POST['address'];
+$Mobile = $_POST['mobile'];
+$Email = $_POST['email1'];
+
 
 $link = mysqli_connect("localhost",
     "root",
-    "",
-    "students");
+    "mysql123",
+    "crud");
 
-$query = "INSERT INTO `students`.`users` (
-`first_name` ,
-`last_name`
-)
+$query = "INSERT INTO `crud`.`personal_info` (`track`,`ssc_roll`,`hsc_roll`,`laptop`,`a_name`,`father_name`,
+`mother_name`,`religion`,`value`,`sex`,`nationality`,`address`,`mobile`,`email`)
+
 VALUES (
-    '$firstName', '$lastName'
+    '$Track','$SSCroll','$HSCroll','$Laptop','$Name','$Father_name','$Mother_name',
+'$Religion','$Value','$Sex','$Nationality','$Address','$Mobile','$Email'
 )";
 
 mysqli_query($link, $query);
