@@ -17,16 +17,16 @@
     <h1>Personal Information</h1><br>
 
     <label>Name: </label>
-    <input type="email" name="name" ><br>
+    <input type="text" name="a_name" ><br>
 
     <label>Father's Name: </label>
-    <input type="email" name="father_name" ><br>
+    <input type="text" name="father_name" ><br>
 
     <label>Mother's Name: </label>
-    <input type="email" name="mother_name" ><br>
+    <input type="text" name="mother_name" ><br>
 
     <label>Religion: </label>
-    <input type="email" name="religion" ><br>
+    <input type="text" name="religion" ><br>
 
     <label>Date Of Birth:</label>
     <select>
@@ -63,12 +63,12 @@
     <input type="text" name="nationality"><br>
 
 
-    <h1>Track Information</h1>
+    <h1>Contact Information</h1>
     <label> Address: </label>
     <input type="text" name="address"><br>
 
     <label> Mobile: </label>
-    <input type="text" name="nationality"><br>
+    <input type="number" name="mobile"><br>
 
     <label>Email: </label>
     <input type="email" name="email1"><br>
