@@ -15,7 +15,6 @@ $Address = $_POST['address'];
 $Mobile = $_POST['mobile'];
 $Email = $_POST['email1'];
 
-
 $link = mysqli_connect("localhost",
     "root",
     "mysql123",
