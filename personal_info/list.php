@@ -37,6 +37,7 @@ $result = mysqli_query($link, $query);
         <td>Father's Name</td>
         <td>Mother's Name</td>
         <td>Religion</td>
+        <td>Date Of Birth</td>
         <td>Sex</td>
         <td>Nationality</td>
         <td>H.S.C Roll</td>
@@ -58,14 +59,14 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['father_name']?></td>
             <td><?php echo $row['mother_name']?></td>
             <td><?php echo $row['religion']?></td>
-            <td><?php echo $row['value']?></td>
+            <td><?php echo $row['dob']?></td>
             <td><?php echo $row['sex']?></td>
             <td><?php echo $row['nationality']?></td>
             <td><?php echo $row['address']?></td>
             <td><?php echo $row['mobile']?></td>
             <td><?php echo $row['email']?></td>
 
-            <td> <a href="#">Edit</a> | <a href="delete.php?id=<?php echo $row['id']?>">Delete</a> | <a href="softdelete.php?id=<?php echo $row['id']?>">Soft Delete</a></td>
+            <td> <a href="#">Edit</a> | <a href="delete.php?ssc_roll=<?php echo $row['ssc_roll']?>">Delete</a> | <a href="view.php?id=<?php echo $row['ssc_roll']?>">View</a></td>
         </tr>
 
     <?php
