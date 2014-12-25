@@ -5,14 +5,14 @@
  * Date: 12/22/14
  * Time: 4:33 PM
  */
-$id = $_GET['id'];
+$id = $_GET['ssc_roll'];
 
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "students");
+    "crud01_new");
 
-$query = "DELETE FROM `students`.`users` WHERE `users`.`id` = $id";
+$query = "DELETE FROM `crud01_new`.`crud` WHERE `crud`.`ssc_roll` = $id";
 
 mysqli_query($link, $query);
 

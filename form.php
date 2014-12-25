@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <body>
 
 <table  border="1", style="width:50%">
@@ -67,7 +67,7 @@
 <table  border="1", style="width:50%">
 <tr>
     <td>Personal Information</td>
-    <td><a href"#">Edit</a></td>
+    <td><a href="#">Edit</a></td>
 
 </tr>
 
@@ -115,11 +115,49 @@
     <td></td>
 
 </tr>
+</table>
+
+</body>
+</body>
+<h1> Contact Information </h1>  &nbsp; <a href="#">Edit</a>
+
+<table  border="1", style="width:50%">
+<tr>
+    <td>Present Address</td>
+     <td>&nbsp;&nbsp;&nbsp;</td>
+
+</tr>
+
+<tr>
+    <td>Permanent Address</td>
+    <td></td>
+
+</tr>
+<tr>
+    <td>District</td>
+    <td></td>
+
+</tr>
+<tr>
+    <td>Home Phone</td>
+    <td></td>
+
+</tr>
+<tr>
+    <td>Mobile</td>
+    <td></td>
+
+</tr>
 
 
-<h1> Contact Information </h1>
 
+<tr>
+    <td>Email</td>
+    <td></td>
 
+</tr>
+
+</table>
 </table>
 </body>
 </html>

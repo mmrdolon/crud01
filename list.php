@@ -10,9 +10,9 @@
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "students");
+    "crud01_new");
 
-$query = "select * from users;";
+$query = "select * from crud;";
 
 $result = mysqli_query($link, $query);
 
@@ -36,9 +36,14 @@ $result = mysqli_query($link, $query);
 
 <table border="1" width="70%">
         <tr>
-            <td>ID</td>
+
             <td>First Name</td>
             <td>Last Name</td>
+
+            <td>S.S,C Roll</td>
+            <td>H.S.C Roll</td>
+            <td>Track</td>
+            <td>Laptop</td>
             <td>Action</td>
         </tr>
 <?php
@@ -46,10 +51,15 @@ $result = mysqli_query($link, $query);
 ?>
 
     <tr>
-        <td><?php echo $row['id']?></td>
+
         <td><?php echo $row['first_name']?></td>
         <td><?php echo $row['last_name']?></td>
-        <td> <a href="#">Edit</a> | <a href="delete.php?id=<?php echo $row['id']?>">Delete</a> | <a href="softdelete.php?id=<?php echo $row['id']?>">Soft Delete</a></td>
+        <td><?php echo $row['ssc_roll']?></td>
+        <td><?php echo $row['hsc_roll']?></td>
+        <td><?php echo $row['track']?></td>
+        <td><?php echo $row['laptop']?></td>
+
+        <td> <a href="#">Edit</a> | <a href="delete.php?ssc_roll=<?php echo $row['ssc_roll']?>">Delete</a> | <a href="softdelete.php?ssc_roll=<?php echo $row['ssc_roll']?>">Soft Delete</a></td>
     </tr>
 
 <?php
