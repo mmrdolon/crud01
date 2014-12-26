@@ -1,4 +1,4 @@
-<form action="list.php" method="post">
+<form action="add.php" method="post">
 
     <h1>Track Information</h1>
 

@@ -1,11 +1,11 @@
 <?php
 
 $link = mysqli_connect("localhost",
-    "root",
-    "mysql123",
-    "crud");
+    "c17c17dolon01",
+    "mrd01935846417",
+    "c17contact_info");
 
-$query = "select * from personal_info;";
+$query = "select * from information;";
 
 $result = mysqli_query($link, $query);
 
@@ -38,7 +38,7 @@ $result = mysqli_query($link, $query);
         <td>Emergency Contact</td>
         <td>Personal Email</td>
         <td>Alternative Email</td>
-
+        <td>Gender</td>
     </tr>
     <?php
     foreach($result as $row){
@@ -54,10 +54,9 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['e_contact']?></td>
             <td><?php echo $row['personal_email']?></td>
             <td><?php echo $row['a_email']?></td>
+            <td><?php echo $row['gender']?></td>
 
-
-
-            <td> <a href="#">Edit</a> | <a href="delete.php?ssc_roll=<?php echo $row['ssc_roll']?>">Delete</a> | <a href="view.php?id=<?php echo $row['ssc_roll']?>">View</a></td>
+            <td> <a href="edit.php?id=<?php echo $row['id']?>">Edit</a> | <a href="delete.php?id=<?php echo $row['id']?>">Delete</a> | <a href="view.php?id=<?php echo $row['id']?>">View</a></td>
         </tr>
 
     <?php
@@ -68,3 +67,5 @@ $result = mysqli_query($link, $query);
 
 
 
+
+?>
