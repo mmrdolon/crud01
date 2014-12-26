@@ -14,12 +14,13 @@ $Achievement  = $_POST['achievement'];
 $link = mysqli_connect("localhost",
     "c17c17dolon01",
     "mrd01935846417",
-    "c17contact_info");
+    "c17contact_info") or die('cannot connect');
 
-$query = "INSERT INTO `c17contact_info`.`academics` ('id',
+$query = "INSERT INTO `c17contact_info`.`academics` (`id`,
 `edu_level`,`exam_title`,`student_group`,`institution`,`result_type`,`result`,`passing_year`,`duration`,`achievement`)
 VALUES (NULL ,'$Level', '$examTitle','$Group','$Institution','$resultType','$Result','$passingYear','$Duration','$Achievement')";
 
+echo $query;
 mysqli_query($link, $query);
 
 header('location:list.php');
