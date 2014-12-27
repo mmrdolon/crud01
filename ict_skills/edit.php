@@ -7,6 +7,7 @@ $link = mysqli_connect("localhost",
 $query = "select * from skills WHERE id = $id";
 $result = mysqli_query($link, $query);
 $row = mysqli_fetch_assoc($result);
+var_dump($row['field']);
 ?>
 
 <h1>Edit Form</h1>
@@ -14,7 +15,15 @@ $row = mysqli_fetch_assoc($result);
     <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
 
     <label> Field Of Specialization:</label>
-    <input type="text" name="field" value="<?php echo $row['field'];?>" /><br>
+   <select name="field" id="field">
+
+       <option value="" selected="selected">Select category</option>
+
+       <option <?php if($row['field'] == 'Information Technology') echo 'selected'; ?> value="Information Technology" >Information Technology</option>
+       <option <?php if($row['field'] == 'Computer Science & Enginering')echo'selected';?> value="Computer Science & Enginering">Computer Science & Enginering</option>
+       <option <?php if($row['field'] == 'Accounting')echo'selected';?> value="Accounting">Accounting</option>
+       <option <?php if($row['field'] == 'Programming')echo'selected';?> value="Programming">Programming</option>
+   </select>
 
     <label> Skill Description:</label>
     <input type="text" name="skill_description" value="<?php echo $row['skill_description'];?>" /><br>

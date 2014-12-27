@@ -3,7 +3,12 @@
     <h1> Specialization</h1>
 
     <label>Field of Specialization:</label>
-    <input type="text" name="field" /><br>
+    <select name="field">
+        <option value="Information Technology" >Information Technology</option>
+        <option value="Computer Science & Enginering">Computer Science & Enginering</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Programming">Programming</option>
+    </select>
 
     <label> Skill description:</label>
     <input type="text" name="skill_description" /><br>
