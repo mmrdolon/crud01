@@ -7,7 +7,7 @@ $link = mysqli_connect("localhost",
     "",
     "crud");
 
-$query = "select * from academic_info2 WHERE id = $id";
+$query = "select * from employment WHERE id = $id";
 
 $result = mysqli_query($link, $query);
 
@@ -22,29 +22,26 @@ $row = mysqli_fetch_assoc($result);
 
     <tr>
         <td>ID</td>
-        <td>level of Education</td>
-        <td>Exam Title</td>
-        <td>Group/Subject</td>
-        <td>Institution</td>
-        <td>Result Type</td>
-        <td>Result</td>
-        <td>Passing Year</td>
-        <td>Duration</td>
-        <td>Achievements</td>
+        <td>Company Name: </td>
+        <td>Company Business: </td>
+        <td>Address: </td>
+        <td>Designation: </td>
+        <td>Department: </td>
+        <td>Duration: </td>
+        <td>Responsibility: </td>
+
     </tr>
 
 
     <tr>
         <td><?php echo $row['id']?></td>
-        <td><?php echo $row['edu_level']?></td>
-        <td><?php echo $row['exam_title']?></td>
-        <td><?php echo $row['student_group']?></td>
-        <td><?php echo $row['institution']?></td>
-        <td><?php echo $row['result_type']?></td>
-        <td><?php echo $row['result']?></td>
-        <td><?php echo $row['passing_year']?></td>
+        <td><?php echo $row['company_name']?></td>
+        <td><?php echo $row['company_business']?></td>
+        <td><?php echo $row['address']?></td>
+        <td><?php echo $row['designation']?></td>
+        <td><?php echo $row['department']?></td>
         <td><?php echo $row['duration']?></td>
-        <td><?php echo $row['achievement']?></td>
+        <td><?php echo $row['responsibility']?></td>
     </tr>
 
 </table>

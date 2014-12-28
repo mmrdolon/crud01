@@ -2,6 +2,12 @@
 
     <h1> Job Information</h1>
 
+    <br>
+
+    <a href="list.php">Show List</a>
+
+    <br>
+
     <label>Company Name:</label>
     <input type="text" name="company_name" /><br>
 
